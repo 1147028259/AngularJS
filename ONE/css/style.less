@@ -1,0 +1,128 @@
+@import url("reset.css");
+
+//封装宽 高 背景
+.whb(@w,@h,@b){
+    width:@w;
+    height:@h;
+    background:@b ;
+}
+
+//封装浮动
+.f(@f){
+    float:@f;
+}
+
+//封装定位 相对定位
+.p(@p){
+    position:@p;
+}
+html,body{
+    font-size: 62.5%;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    header{
+        .whb(100%,4.7rem,none);
+        display:-webkit-box;
+        -webkit-box-orient:horizontal;
+        border-bottom: 1px solid #ccc;
+       &>div{
+           .whb(4.7rem,4.7rem,none);
+           text-align: center;
+          img{
+           .whb(25px,25px,none);
+             margin-top: 18px;  
+          }              
+       }
+      h1{ 
+          -webkit-box-flex: 1;
+          text-align:center;
+          line-height: 4.7rem;
+          font-size: 16px;
+       } 
+    }
+   section{
+       -webkit-box-flex: 1;
+       padding:10px 10px 0 10px ;
+        box-sizing: border-box;
+       overflow: auto;
+      .banner{
+        .whb(100%,auto,none);
+        border: 1px solid #cacaca;
+      .aa{
+          padding:10px 10px 0 10px ;
+          box-sizing: border-box;    
+           img{
+            .whb(100%,200px,none);
+          
+          
+        }
+       .b_title{
+         .whb(100%,auto,none);
+         line-height:20px;
+         color: #ccc;
+         span:nth-child(2){
+             float: right;
+         }   
+        } 
+       .b_last{
+          width: 100%; 
+          min-height: 100px;
+          line-height: 24px; 
+          padding-top: 15px;
+          box-sizing: border-box; 
+          font-size: 14px; 
+       }
+       .b_data{
+         .whb(100px,20px,none);
+         line-height: 20px;
+         float: right;
+       }       
+      }  
+    }
+     .visit{
+        display:-webkit-box;
+        -webkit-box-orient: horizontal; 
+         
+        li:nth-child(1){
+            -webkit-box-flex: 3;
+        }
+        li{
+            -webkit-box-flex: 1;
+            padding-top: 30px;
+            padding-left: 30px;
+            box-sizing: border-box;
+           img{
+              .whb(30px,30px,none); 
+              vertical-align: middle;
+           } 
+           span{
+             
+              margin-left: 6px;
+              font-size: 14px;
+              
+           }
+        } 
+   
+     }     
+  }  
+   footer{
+      .whb(100%,4.7rem,none);
+      display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      text-align: center; 
+      border-top: 1px solid #ccc;
+      dl{
+        .whb(4rem,auto,none);
+        -webkit-box-flex: 1;
+        padding-top: 6px;
+        box-sizing: border-box; 
+        img{
+            .whb(2rem,2rem,none);
+        } 
+      }
+   } 
+}

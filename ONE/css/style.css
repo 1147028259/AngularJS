@@ -1,0 +1,128 @@
+@import url("reset.css");
+html,
+body {
+  font-size: 62.5%;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.box header {
+  width: 100%;
+  height: 4.7rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #ccc;
+}
+.box header > div {
+  width: 4.7rem;
+  height: 4.7rem;
+  background: none;
+  text-align: center;
+}
+.box header > div img {
+  width: 25px;
+  height: 25px;
+  background: none;
+  margin-top: 18px;
+}
+.box header h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 4.7rem;
+  font-size: 16px;
+}
+.box section {
+  -webkit-box-flex: 1;
+  padding: 10px 10px 0 10px ;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.box section .banner {
+  width: 100%;
+  height: auto;
+  background: none;
+  border: 1px solid #cacaca;
+}
+.box section .banner .aa {
+  padding: 10px 10px 0 10px ;
+  box-sizing: border-box;
+}
+.box section .banner .aa img {
+  width: 100%;
+  height: 200px;
+  background: none;
+}
+.box section .banner .aa .b_title {
+  width: 100%;
+  height: auto;
+  background: none;
+  line-height: 20px;
+  color: #ccc;
+}
+.box section .banner .aa .b_title span:nth-child(2) {
+  float: right;
+}
+.box section .banner .aa .b_last {
+  width: 100%;
+  min-height: 100px;
+  line-height: 24px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.box section .banner .aa .b_data {
+  width: 100px;
+  height: 20px;
+  background: none;
+  line-height: 20px;
+  float: right;
+}
+.box section .visit {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.box section .visit li:nth-child(1) {
+  -webkit-box-flex: 3;
+}
+.box section .visit li {
+  -webkit-box-flex: 1;
+  padding-top: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.box section .visit li img {
+  width: 30px;
+  height: 30px;
+  background: none;
+  vertical-align: middle;
+}
+.box section .visit li span {
+  margin-left: 6px;
+  font-size: 14px;
+}
+.box footer {
+  width: 100%;
+  height: 4.7rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+.box footer dl {
+  width: 4rem;
+  height: auto;
+  background: none;
+  -webkit-box-flex: 1;
+  padding-top: 6px;
+  box-sizing: border-box;
+}
+.box footer dl img {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+}
