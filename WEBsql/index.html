@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>数据库的操作</title>
+	 <style>
+	 	*{
+	 		margin: 0;padding: 0;
+	 	}
+	 	.box{
+	 		width: 200px;
+	 		height: 200px;
+	 		margin: 0 auto;
+	 		border: 1px solid #ccc;
+	 	}
+	 .box tr{
+	 		line-height: 24px;
+	 		font-size: 32px;
+	 	}
+	.updata{
+		display: none;
+	} 	
+	 </style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<input type="text" id="key"/>
+		<input type="text" id="val"/><br/>
+		<button class="aa">增加</button>
+		<button class="bb">删除</button>
+		<button class="cc">查找</button>
+		<button class="dd">修改</button><br/>
+		<div class="updata">
+			<input type="text"  class="k"/>
+		    <input type="text" class="v"/>	
+		</div>
+		
+		
+		<script src="js/jquery-3.1.1.js"></script>
+		<script>
+			var db=openDatabase('mydb','1.0','1501',1024*1024*2);
+			    db.transaction(function(aa){
+			    	aa.executeSql('create table if not exists data (id unique,log)')
+			    })
+			    $('.aa').on('click',function(){
+			    var Key=$('#key').val(),val=$('#val').val();
+			    db.transaction(function(aa){
+			    	aa.executeSql('insert into data(id,log)values(?,?)',[Key,val]);
+			    })			    
+			    })
+			    $('.cc').on('click',function(){
+			    	db.transaction(function(aa){
+			    		aa.executeSql('select * from data',[],function(aa,result){                   	    			
+                        var html='';  
+                          $.each(result.rows,function(k,v) {
+                           html+='<tr><td>'+v.id+'</td><td>'+v.log+'</td><td><input type="checkbox" value="'+v.id+'"></td></tr>';                          
+                          });
+                          $('.box').html(html);
+			    		})
+			    	})
+			    })
+			    $('.bb').on('click',function(){
+			       var ff=$('input:checked').val();
+			       console.log(ff);
+			        db.transaction(function(aa){
+			       aa.executeSql('delete from data where id=?',[ff])
+			    })	
+			  })
+			    $('.dd').on('click',function(){
+			       var ff=$('input:checked').val();
+                   $('.updata').show();
+                  $('.k').val(ff); 
+			  })  
+		</script>
+	</body>
+</html>
