@@ -1,0 +1,169 @@
+@import url("reset.css");
+.indent {
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.indent header {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #ccc;
+}
+.indent header h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.indent header h2 span:nth-child(1) {
+  border: 1px solid #ff7f1d;
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #fff;
+  background: #ff7f1d ;
+  border-radius: 5px 0 0 5px;
+  padding: 2px 2px;
+  box-sizing: border-box;
+}
+.indent header h2 span:nth-child(2) {
+  border: 1px solid #ff7f1d;
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #ff7f1d;
+  border-radius: 0 5px 5px 0;
+  padding: 2px 2px;
+  box-sizing: border-box;
+}
+.indent header .topLeft,
+.indent header .topRight {
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  line-height: 4rem;
+  text-align: center;
+}
+.indent header .topLeft b,
+.indent header .topRight b {
+  width: 1rem;
+  height: 1rem;
+  background: none;
+  border: 1px solid #ccc;
+  display: inline-block;
+  border-top: none ;
+  border-right: none ;
+  margin-right: 5px;
+  transform: rotateZ(45deg);
+}
+.indent header .topLeft img,
+.indent header .topRight img {
+  width: auto;
+  height: 2rem;
+  background: none;
+  margin-top: 10px;
+}
+.indent section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+}
+.indent section .nav {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.indent section .nav .navlogo {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+}
+.indent section .nav .navlogo dl {
+  -webkit-box-flex: 1;
+}
+.indent section .nav .n_list {
+  width: 4rem;
+  height: 3rem;
+  background: none;
+  text-align: center;
+  line-height: 3rem;
+  border-left: 1px solid #ccc;
+}
+.indent section .nav .n_list b {
+  width: 1rem;
+  height: 1rem;
+  background: none;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+  transform: rotateZ(45deg);
+}
+.indent section .main {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 10px;
+}
+.indent section .main h6 {
+  padding: 0 10px;
+  box-sizing: border-box;
+  line-height: 3rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: bold;
+}
+.indent section .main h6 span {
+  float: right;
+  color: #ff8938;
+}
+.indent section .main .m_list {
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+}
+.indent footer {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-top: 1px solid #ccc;
+}
+.indent footer dl {
+  width: 100%;
+  height: auto;
+  background: none;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.indent footer dl dt img {
+  width: auto;
+  height: 2rem;
+  background: none;
+}
+.indent footer dl dd {
+  line-height: 12px;
+}
+.indent footer dl .gduo {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: none;
+  padding-top: 8px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #ff7f1d ;
+  margin: 2px auto;
+}
+.indent footer .bg {
+  color: #ff7f1d;
+}
